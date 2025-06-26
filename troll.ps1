@@ -20,7 +20,7 @@ RUNDLL32.exe user32.dll,UpdatePerUserSystemParameters
 Add-Type -AssemblyName PresentationFramework
 
 [System.Windows.MessageBox]::Show(
-  "Se ha detectado una negligencia de seguridad grave.\n\nHas dejado el equipo desbloqueado.",
+  "Se ha detectado una negligencia de seguridad grave.Has dejado el equipo desbloqueado.",
   "Informe del Comité Disciplinario",
   [System.Windows.MessageBoxButton]::OK,
   [System.Windows.MessageBoxImage]::Error)
@@ -41,7 +41,7 @@ if ($response -eq [System.Windows.MessageBoxResult]::Yes) {
     1..50 | ForEach-Object {
         Start-Sleep -Milliseconds 150
         [System.Windows.MessageBox]::Show(
-          "¿¡CÓMO QUE NO, CABESTRO?!",
+          "CÓMO QUE NO, CABESTRO?!",
           "ERROR $_",
           [System.Windows.MessageBoxButton]::OK,
           [System.Windows.MessageBoxImage]::Hand)
